@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" xmlns="http://javafx.com/javafx/8.0.66" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cc.purplepopo.SubmitController">
+   <children>
+      <TabPane tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="本地文档">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <TextArea fx:id="textArea" prefHeight="500.0" />
+                              <Button fx:id="textSubmit" mnemonicParsing="false" onMouseClicked="#textSubmitButton" text="提交">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="网络服务器">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER">
+                           <children>
+                              <TextArea fx:id="webArea" prefHeight="500.0" />
+                              <HBox alignment="TOP_CENTER">
+                                 <children>
+                                    <VBox>
+                                       <children>
+                                          <TextField fx:id="iptext" promptText="在这输入服务器IP" text="purplepopo.cc" />
+                                          <PasswordField fx:id="pwtext" promptText="在这里输入密码" text="star" />
+                                       </children>
+                                    </VBox>
+                                    <Button fx:id="webSubmit" mnemonicParsing="false" onMouseClicked="#WebSubmitButton" text="提交">
+                                       <font>
+                                          <Font size="24.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

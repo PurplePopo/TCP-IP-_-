@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Font?>
+
+
+<Group xmlns="http://javafx.com/javafx/8.0.66" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cc.purplepopo.ExpressionController">
+   <children>
+      <Label fx:id="listLable" alignment="CENTER_RIGHT" prefWidth="80.0" text="0." textFill="#09ff00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="expressionLabel" alignment="CENTER_RIGHT" layoutX="80.0" prefWidth="220.0" text="00+00+00+00+00    =">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField" layoutX="300.0" prefWidth="50.0" />
+   </children>
+</Group>
